@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Skybox Material
+  m_Name: Skybox Material (Level 2)
   m_Shader: {fileID: 104, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION _EMISSIONMAP _LIGHTMAPPING_DYNAMIC_LIGHTMAPS _LIGHTMAPPING_REALTIME
     _UVSEC_UV1
@@ -100,7 +100,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EmissionScaleUI: 2
-    - _Exposure: 0.3
+    - _Exposure: 1
     - _Glossiness: 0.1
     - _Lightmapping: 1
     - _Metallic: 0.1
@@ -121,4 +121,4 @@ Material:
     - _SkyTint: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 0.15686275, g: 0.15686275, b: 0.15686275, a: 1}
-    - _Tint: {r: 0, g: 1, b: 0.9237678, a: 0.5}
+    - _Tint: {r: 0.7008996, g: 0, b: 1, a: 0.5}

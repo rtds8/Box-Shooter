@@ -144,7 +144,6 @@ public class GameManager : MonoBehaviour {
 	{
 		// we are just loading the specified next level (scene)
         SceneManager.LoadScene(nextLevelToLoad);
-	}
-	
+	}	
 
 }

@@ -4,7 +4,7 @@ using System.Collections;
 public class TargetMover : MonoBehaviour {
 
 	// define the possible states through an enumeration
-	public enum motionDirections {Spin, Horizontal, Vertical};
+	public enum motionDirections {Spin, Horizontal, Vertical, SpinAround};
 	
 	// store the state
 	public motionDirections motionState = motionDirections.Horizontal;
@@ -32,6 +32,14 @@ public class TargetMover : MonoBehaviour {
                 // move up and down over time
                 gameObject.transform.Translate(Vector3.right * Mathf.Cos(Time.timeSinceLevelLoad) * motionMagnitude);
                 break;
+
+			case motionDirections.SpinAround:
+				// move & rotate
+				gameObject.transform.Rotate(Vector3.up * spinSpeed * Time.deltaTime);
+				gameObject.transform.Translate(Vector3.up * Mathf.Cos(Time.timeSinceLevelLoad) * motionMagnitude);
+				gameObject.transform.Translate(Vector3.right * Mathf.Cos(Time.timeSinceLevelLoad) * motionMagnitude);
+				break;
+
 		}
 	}
 }
